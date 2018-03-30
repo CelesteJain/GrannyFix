@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="scss.css">
+    
+    
+    
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBKijEBdi2WW0aXqijRPAthTtpMylpw-xY",
+    authDomain: "grannys-fix.firebaseapp.com",
+    databaseURL: "https://grannys-fix.firebaseio.com",
+    projectId: "grannys-fix",
+    storageBucket: "grannys-fix.appspot.com",
+    messagingSenderId: "852104897433"
+  };
+  firebase.initializeApp(config);
+</script>
+        
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+<body>
+    <section class="slide-wrapper">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                 </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item item1 active" style="background-image: url(grandma3.jpg)">
+                        <div class="fill" >
+                            <div class="inner-content">
+                                
+                                <div class="carousel-desc">
+
+                                    <h1><strong>Granny'sFix</strong></h1>
+                                    <h3>Tried and Tested<br> From the diaries of the Ancient </h3>
+                                    <a href="Registration/login.php"><button type="button" class="btn btn-primary btn-lg">Let's Start</button></a>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="fill" style="background-color:#b33f4a;">
+                            <div class="inner-content">
+                                <div class="carousel-img">
+                                    <img src="homerem1.jpg" alt="HomeRemedy" class="img img-responsive img-thumbnail" />
+                                </div>
+                                <div class="carousel-desc">
+
+                                    <h1>Why us,right?</h1>
+                                    <h3>So, you’re considering using natural cures and natural remedies for your health problem instead of the standard “drugs or surgery” approach?Well, good for you! You’ve definitely come to the right place to find the answers you need.<br>
+                                        <h3>Gaurenteed, working solutions</h3><br>
+                                    <blockquote>Remember this… you can always get the drugs or surgery later<br> but you can’t get “unsurgeried” later… you can’t get any of your<br> body parts put back later! So why not trust those remedies <br>often foretold by our Granny?!</blockquote></h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="fill" style="background-color:#7fc2f4;">
+                            <div class="inner-content">
+                                <div class="col-md-6">
+
+                                    <div class="carousel-img">
+                                        <img src="logo.jpg" alt="health" class="img img-responsive img-thumbnail" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-left">
+                                    <div class="carousel-desc">
+
+                                        <h2>Contact Me</h2>
+                                        <p><h1>Celeste Jain <small> At your service.
+                                        </small></h1> <h2>Author <br> celestemjain@gmail.com</h2></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        
+    </section>
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+// invoke the carousel
+    $('#myCarousel').carousel({
+      interval:6000
+    });
+
+// scroll slides on mouse scroll 
+$('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
+
+        if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+            $(this).carousel('prev');
+			
+			
+        }
+        else{
+            $(this).carousel('next');
+			
+        }
+    });
+
+//scroll slides on swipe for touch enabled devices 
+
+ 	$("#myCarousel").on("touchstart", function(event){
+ 
+        var yClick = event.originalEvent.touches[0].pageY;
+    	$(this).one("touchmove", function(event){
+
+        var yMove = event.originalEvent.touches[0].pageY;
+        if( Math.floor(yClick - yMove) > 1 ){
+            $(".carousel").carousel('next');
+        }
+        else if( Math.floor(yClick - yMove) < -1 ){
+            $(".carousel").carousel('prev');
+        }
+    });
+    $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+    });
+});
+    
+});
+//animated  carousel start
+$(document).ready(function(){
+
+//to add  start animation on load for first slide 
+$(function(){
+		$.fn.extend({
+			animateCss: function (animationName) {
+				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+				this.addClass('animated ' + animationName).one(animationEnd, function() {
+					$(this).removeClass(animationName);
+				});
+			}
+		});
+			 $('.item1.active img').animateCss('slideInDown');
+			 $('.item1.active h2').animateCss('zoomIn');
+			 $('.item1.active p').animateCss('fadeIn');
+			 
+});
+	
+//to start animation on  mousescroll , click and swipe
+
+
+ 
+     $("#myCarousel").on('slide.bs.carousel', function () {
+		$.fn.extend({
+			animateCss: function (animationName) {
+				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+				this.addClass('animated ' + animationName).one(animationEnd, function() {
+					$(this).removeClass(animationName);
+				});
+			}
+		});
+	
+// add animation type  from animate.css on the element which you want to animate
+
+		$('.item1 img').animateCss('slideInDown');
+		$('.item1 h2').animateCss('zoomIn');
+		$('.item1 p').animateCss('fadeIn');
+		
+		$('.item2 img').animateCss('zoomIn');
+		$('.item2 h2').animateCss('swing');
+		$('.item2 p').animateCss('fadeIn');
+		
+		$('.item3 img').animateCss('fadeInLeft');
+		$('.item3 h2').animateCss('fadeInDown');
+		$('.item3 p').animateCss('fadeIn');
+    });
+});
+
+</script>
+</body>
+</html>
