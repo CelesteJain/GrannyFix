@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Aclonica|Modern+Antiqua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    
+    <link type="text/css" rel="stylesheet" href="index1.css">
+    <style>
+        
+        <h3>{ font-size: 25px;
+               font-weight: 100}
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a.active {
+    background-color: black;
+    color: white;
+    width: 250px;
+    text-align: center;
+    display: block;
+    padding: 12px;
+}
+
+</style>
+</head>
+<body>
+       <div class="container-fluid">
+ <div class="row">
+  
+  <div class="col-lg-3">
+     <br><br> 
+  <div class="vertical-menu">
+  <a href="index1.php" class="active ">Home</a>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun1()">Yoga</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun2()" >Exercise</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun3()">Relax eyes</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun4()">Weight Loss</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun5()">Remove Lice</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun6()">Hair Care</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun7()">Skin Care</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun8()">Soften Chapped lips</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun9()">Beat insomia</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun10()">Mouth Ulcers</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun11()">Whiten stained teeth</button>
+ </div> 
+</div>
+  <div class="col-lg-9" style="border-spacing: 0;" >  
+ <div style=" background-color: burlywood" >   <br><br>  
+<h1 id="heading" style="text-align: center"></h1>
+     <hr width=50%>
+<br><br><br>
+
+<p id="para" class="container-fluid" style="text-align: justify"><br></p>
+      </div>
+     </div>
+<script>
+var home=`
+<center><img src="fitness2.jpg"  width=500px></center><br>
+Beauty is in the eyes of the beholder, but that is not something that stops us from trying to perfect the flaws we perceive we have. While there are a number of products out there to fix every beauty problem you have ever had, there are natural ways to achieve the same results. Especially in a country like India, where we have relied on natural ways to improve the way we look for eons, falling back on natural remedies for skin and hair problems is common to come by. <br>Here you will find natural solutions to everyday hair care and skin care problems like dandruff, dry hair, split ends, acne, stretch marks and much more. <br> While using natural products to get rid of common hair care and skin care problems may take a little more time than their artificial counterparts, these remedies most often do not have side effects and give great results. <br> 
+ <div class="row"><center>
+    <div class="col-lg-3"><img src="fitness1.jpg" width=500px></div>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-2"><img src="fitness3.jpg" width=400px ></div>
+          </center>
+      </div>`;
+    
+var yoga=`Yoga is an ancient art which was originated in India around six thousand years ago. Earlier people were used to of practicing yoga and meditation in their daily lives to live healthy and strong whole life. However the practice of yoga was declining day by day in such a crowded and hectic environment. Yoga is very safe and can be safely practiced by anyone anytime even by children also to take it’s all the benefits. Yoga is a practice to bring body parts together to make a balance of body, mind and soul. Earlier it was practiced by the yogis to meditate them. <br>
+  <div class="embed-responsive embed-responsive-16by9">
+  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gTxhkwmyP9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div><br>
+
+ For futher interest, <a href="https://www.yogajournal.com/poses"> click here </a>`;    
+    
+var exercise=`Exercising today is very important to a persons health. Exercising is mainly for cardiovascular fitness. Some people do it because they just enjoy it. Exercising also gently improves your health. <br>There are three good benefits to exercising. Health benefits sush as helping weight management, improve your quality of life, and reducing the feelings of depression and anxiety. <br>Another benefit is environmental. When people are active it can contribute to the created healthy environment. Places where people feel comfortable to walk, would be safer because more people are out and about. Social benefits is one of the best ways to meet new people while exercising.<br>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+                <img src="ex1.png" HEIGHT=300 WIDTH=500 class="img-thumbnail">
+ 
+    </div>
+    <div class="col-sm-8">
+        <br><br><p><h3>Do</h3><br>
+Place your hands directly under your shoulders.
+Position your feet hip-width apart.
+Maintain a plank position; your body should be in a straight line from from the back of your head to your hips.
+Keep your neck neutral, keeping it in line with your shoulders.
+As you lower, keep your elbows close to your body.<br>
+
+<h3>Don’t</h3><br>
+Let your butt sag or stick up.<br>
+Tilt your head up or tuck it in.<br>
+Allow your shoulders to come towards your ears.
+
+</p>
+        
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+                <img src="ex2.png" HEIGHT=300 WIDTH=500 class="img-thumbnail">
+ 
+    </div>
+    <div class="col-sm-8">
+        <br><p><h3>Do</h3><br>
+Lie on your back.<br>
+Place your feet flat on the floor, hip-width apart, toes pointing forward, with your knees bent. <br>
+Contract your abs.<br>
+Push through your heels to lift your hips off the floor<br>
+
+<h3>Don’t</h3><br>
+Stop contracting your abs.<br>
+Push your hips so high that the neutral position of your hips and back becomes compromised<br>
+
+</p>
+        
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+                <img src="ex3.png" HEIGHT=300 WIDTH=500 class="img-thumbnail">
+ 
+    </div>
+    <div class="col-sm-8">
+        <br><p><h3>Do</h3><br>
+<br>
+Start in the top of a pushup position.<br>
+Bring your right foot to the outside of your right hand.<br>
+Land with a flat foot.<br>
+Bring your foot back to the starting position.<br>
+Repeat on other side. <br>
+Maintain a strong plank position throughout.<br>
+
+<h3>Don’t</h3><br>
+<br>
+Allow your shoulders to move away from directly over your hands.<br>
+Allow your hips to sag<br>
+</p>
+        
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+                <img src="ex4.png" HEIGHT=300 WIDTH=500 class="img-thumbnail">
+ 
+    </div>
+    <div class="col-sm-8">
+        <br><p><h3>Do</h3><br>
+Keep your chest up.<br>
+Shift your weight through your midfoot and heel.<br>
+Lunge as low as your flexibility allows<br>
+
+
+<h3>Don’t</h3><br>
+<br>Let your knees travel forward past your toes<br>
+
+</p>
+        
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+`;
+    
+    
+var eyes=`<br>We all know how important it is to keep our bodies fit by keeping active and maintaining a regular exercise routine. But, did you know that you can exercise your eyes as well? Eye exercises are designed to strengthen your eye muscles, improve focusing, eye movements, and stimulate the vision center of your brain. While there is no scientific proof that eye exercises will improve your eyesight, they may help to counteract existing eye problems you may have and maintain your current eyesight level<br>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <video width="320" height="240" controls>
+    <source src = "https://www.wikihow.com/video/b/b8/Exercise%20Your%20Eyes%20Step%202%20Version%205.360p.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Palm your eyes.</h3><br>
+        <p> Doing this will reduce stimuli to your eyes and brain. Closing your eyes and applying light pressure to them will spread the tear film in your eyes evenly and relax them<br>
+        Take deep breaths slowly and evenly while thinking of a calming scene, like an empty beach, a clear lake, or a still mountain. Once you see nothing but blackness, remove your palms from your eyes.<br>
+        Repeat the palming for three minutes or more.<br>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <video width="320" height="240" controls>
+    <source src = "https://www.wikihow.com/video/7/77/Exercise%20Your%20Eyes%20Step%205%20Version%205.360p.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Practice zooming with your eyes.</h3><br>
+        <p> This is a good eye focusing exercise, as you have to constantly adjust how well you can focus on an object from certain distances.<br>You can also practice this exercise by holding a pencil in front of you at arm’s length. Then, move your arm slowly to your nose. Follow the pencil with your eyes until you can’t focus on it any longer.<br>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <video width="320" height="240" controls>
+    <source src = "https://www.wikihow.com/video/a/a4/Exercise%20Your%20Eyes%20Step%206%20Version%205.360p.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Make a figure eight with your eyes.</h3><br>
+        <p>This is a great exercise to practice controlling the physical movement of your eyes.<br>
+        Imagine a giant figure eight on the floor, about 10 feet in front of you.<br>
+        Trace the figure eight with your eyes, slowly.<br>
+        Trace it one way for a few minutes and then trace it the other way for a few minutes..<br>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <video width="320" height="240" controls>
+    <source src = "https://www.wikihow.com/video/2/2b/Exercise%20Your%20Eyes%20Step%208%20Version%205.360p.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Do directional eye exercises.</h3><br>
+        <p>Moving your eyes in different directions is a good way to exercise your eyes.<br>
+    Always finish up either with palming to relax your eyes after your intense exercise session.<BR>
+    You can also end your eye workout by simply closing your eyes and keeping them shut in a dark, quiet room for several minutes. Let them cool down and rest.<BR>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+`;
+    
+    
+var weightloss='<p> <img src="https://www.top10homeremedies.com/wp-content/uploads/2013/11/obesity-and-weight-loss-600x600.jpg" style="width:70%";><ul><li> Add limejuice and salt to lukewarm water and drink empty stomach in the morning to reduce weight.<li>Soak 4 to 5 garlic pieces in milk and boil it till the milk is reduced to half. Eat the garlic along with the milk. Garlic helps in removing the unnecessary fat from the body. <li>Regularly taking cow milk with honey also helps in reducing weight.<li> Including snake guord regularly in diet helps in reducing weight.<li>Grind carrot and add to butter milk and drink regularly to lose weight.<li>Papya ( not the ripe one) cooked with dhal helps in reducing weight.<li> Mix black pepper powder in vegetable soup and vegetables. It not only enhances the flavor of your food items but also helps in controlling obesity and burning excessive fat.<li>Eat papaya or vegetable soup as your dinner for 2-3 months if you want a quick weight loss. This works in controlling obesity.<li> Drink green tea or ginger tea as ginger is very effective in burning excessive fat in your body. <li> Mix small amount of honey and fresh ginger paste. Take this with half tablespoon guggul to control obesity.<li> Prepare a drink by adding half teaspoon fresh honey and half teaspoon fresh tulsi paste in a luke warm water. It is an effective home remedy for obesity control.<li> You can also try this most common and simple home remedy for obesity. Add half teaspoon fresh lemon juice and half teaspoon fresh honey in a luke warm water. Take this every morning with an empty stomach.<li> Eat tomato in early morning as it is beneficial in keeping cholesterol level to the normal and reduce fat.<li> Horse gram is also very effective in controlling obesity. Soak 1-2 tablespoon of horse gram in a glass of water and allow it to rest overnight and take the soaked solution every morning in an empty stomach. <li> Eat a lot of cabbage, can eat as a salad or added to other food. Try to replace one meal with a cabbage meal. <li >Eating 10-12 fully grown curry leaves every morning for 3 to 4 months may be helpful in weight loss for obese and overweight people.<li> Eating a tomato in the morning before breakfast for 3 to 4 months may be helpful in weight loss for obese and overweight people.</p>   ';
+    
+    
+var lice=`<p>Just the thought of lice makes most people shiver. Head lice are teeny tiny parasites that live on the scalp and hair shafts where they dine on blood. Nearly ten million school children are diagnosed with lice each year. Lice can be contracted by coming in contact with an infected person through play, sports, school or wearing clothing of someone who has the parasite. <br>
+Because they reproduce so quickly, it is very difficult to get rid of lice. There are a number of kits and products on the market that can eradicate the lice but they are also loaded with chemicals. The main ingredient in all of these shampoos and kits is permethrin – a very dangerous and toxic substance that should never be placed near the scalp – especially a child’s scalp.<br></p>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <img src="https://www.rd.com/wp-content/uploads/2017/08/08_garlic_Home-Remedies-For-Lice-That-Really-Work_453826042_Chayapak-Jansavang-380x254.jpg" style="width:300px; height:300px">
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Garlic</h3><br>
+        <p>Although lice are not actually vampires, using this ancient remedy against the undead can also get rid of a lice infestation. Garlic is one of the home remedies for lice that is a terribly smelly option, but make a paste with 8 to 10 garlic cloves and a few teaspoons of lime juice. Spread on the scalp and leave the paste on for a half an hour. Shampoo to clean. The intense smell is believed to kill the live lice and their nits. This treatment should be repeated weekly for one or two months.
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <img src="https://www.rd.com/wp-content/uploads/2017/08/09_vinegar_Home-Remedies-For-Lice-That-Really-Work_482652406_marekuliasz-380x254.jpg" style="width:300px; height:300px">
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Salt and Vinegar</h3><br>
+        <p>The combination of salt and vinegar applied to the scalp is believed to be one of the better home remedies for lice for several reasons: First, the salt dehydrates the lice while the vinegar kills young lice and nits. Although it will not kill adult lice, the vinegar is believed to loosen the "glue" that allows lice to hold tight to hair strands. This method is especially effective when combined with thorough combing.<br>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <img src="https://www.rd.com/wp-content/uploads/2017/08/04_petroleumjelly_Home-Remedies-For-Lice-That-Really-Work_587464949_Suppakrit-Boonsat-380x254.jpg" style="width:300px; height:300px">
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Petrolum Jelly</h3><br>
+        <p>Because some people have coconut allergies, another one of the more promising home remedies for lice involves using petroleum jelly, a household item you no doubt have in a drawer or closet somewhere. One caveat for the use of petroleum jelly, however, is that it is very resistant to cleansers. If you do apply petroleum jelly to the scalp and hair in order to kill lice and nits, it may take several passes with a harsh dish detergent in order to remove all of the residue from your hair. Petroleum jelly may be a better option for those with very short hairstyles.<br>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+
+<div class="row">
+    <div class="col-sm-4">
+    <br><br><br>
+    <img src="https://www.rd.com/wp-content/uploads/2017/08/03_coconutoil_Home-Remedies-For-Lice-That-Really-Work_477410371_abc1234-380x254.jpg" style="width:300px; height:300px">
+    </div>
+    <div class="col-sm-8">
+        <br><h3>Coconut Oil</h3><br>
+        <p>Coconut oil is another one of the home remedies for lice via the smothering technique, and because it's more of a solid matter than mayo or tea tree oil, it's easier to spread onto the hair. (Bonus: It has a pleasant, tropical smell). Many households now stock coconut oil for a wide variety of uses including cooking and moisturizing. If you don't have any in stock, visit any major grocery store. In addition to smothering the lice, coconut oil traps them on the head and keeps them from jumping to other people's heads or any other surface where they can live and perpetuate.<br>
+        </p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+`;
+    
+var haircare=`<p>There are no shortcuts to growing luscious, long locks. On average, hair grows about a half an inch per month. Your general health, well-being, and genetic factors affect your rate of hair growth.<br>
+
+You can encourage hair growth by maintaining healthy hair through a good diet and proper hair care. Certain herbs can help make your hair grow faster, too.<br>
+some natural ways to get great hair. Follow these easy and simple beauty tips for hair to give that luster and shine, and flaunt your hair like the models do...<br>
+ <h3> 1. Egg Treatment</h3>
+<p>Use the entire egg to condition your hair. If you have dry or brittle hair, use egg whites to moisturize your hair. Use ½ cup of any egg mixture (egg white, entire egg) and apply to clean, damp hair. Leave it for 20 minutes and rinse with cool water. Try this one of the most effective beauty tips for hair and notice the change</p>
+ <h3> 2. Avoid Hot water </h3>
+<p>Skip hot water showers, because hot water will make your hair dry and brittle as it strips protective oils from your hair - says Dr. Suttar. Thus, prefer a temperature which is just a bit warmer than your body temperature.</p>
+ <h3> 3. Bottle Gourd Treatment </h3>
+<p>Extract some bottle gourd juice and apply it into your hair. Keep this solution for half an hour and wash it off thoroughly. This is one of the simple beauty tips for hair that would do wonders.</p>
+<h3> 4. For that shiny soft hair</h3>
+<p>Prepare a mixture of 1 cup of your daily conditioner and 2-3 tablespoons of honey. Apply this mixture evenly on your wet hair. Leave it for 30 minutes and wash it off thoroughly. This mixture will close down your hair's cuticle and give your hair that amazing shine.</p>
+< h3> 5. Baking soda therapy </h3>
+<p>One of the beauty tips for hair is Baking soda therapy. Make a mixture of 3 tbsp. of baking soda and some water. Rinse your hair with this solution after shampooing. Let it set in for at least 5 minutes before the final rinse. This therapy will help to remove the excess shampoo and styling product from your hair.</p>
+<h3> 6. For bouncy hair</h3>
+<p>Apply a one to one mixture of warm water and apple cider vinegar to your hair. Rinse it thoroughly after 5 minutes to get rid of the apple cider smell.</p>
+<h3> 7.For strong hair</h3>
+<p>Use almond oil to treat dry and damaged hair. It is a very simple procedure, pour some almond oil in a bowl and heat it for 40 seconds. Then evenly distribute on your hair. Leave it for 30 minutes and then rinse normally with shampoo and conditioner using cold water.</p>
+<h3> 8. Say bye-bye to dull hair with lemon juice </h3>
+<p>After the final rinse, apply 1 tbsp lemon juice to your hair. Simply towel dry your hair and style as normal to get rid of dry hair.</p>
+`;
+
+var skincare =` 
+<center><img src="skin.png" ></center>
+<div class="row">
+    <div class="col-sm-6">
+    <br>
+    <img src="skin1.png" WIDTH=500px  >
+    </div>
+    <div class="col-sm-6">
+       <br>
+    <img src="skin2.png" WIDTH=500px>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+
+<div class="row">
+    <div class="col-sm-6">
+    <br>
+    <img src="skin3.png" WIDTH=500px  >
+    </div>
+    <div class="col-sm-6">
+       <br>
+    <img src="skin4.png" WIDTH=500px>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-6">
+    <br>
+    <img src="skin5.png" WIDTH=500px  >
+    </div>
+    <div class="col-sm-6">
+       <br>
+    <img src="skin6.png" WIDTH=500px>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+`;
+    
+var lips=` <p>Dryness and peeling skin on the lips can get a bit annoying. And when we complain to our dear mothers about it, they ask us to stop licking our lips every other minute. The best way to prevent this problem is by providing the lips with the hydration and nourishment we have been depleting them of.<br>
+
+Before we get into the wonderful home remedies you can use for chapped lips, here’s something you should know. Water is an essential part of any beauty regimen. It helps to keep your body and skin well hydrated. No matter how many remedies or lip balms you use, if you do not drink enough water, your chapped lips are going to keep coming back. So, first and foremost, drink plenty of water during the day and use the remedies given in this article for faster results.<br>
+
+<h3>Coconut Oil</h3>
+<center><img src="http://cdn2.stylecraze.com/wp-content/uploads/2013/05/1.-Coconut-Oil-For-Lips.jpg"></center>
+<div class="row">
+   <div class="col-md-6"> 
+    <h3>What You Have To Do</h3>
+Depending on which carrier oil and essential oil are available, make a blend by mixing 1-2 drops of the essential oil in the carrier oil.<br>
+Apply this blend on your lips and leave it on.<br><br>
+<hr>How Often You Should Do This</h3><br>
+Reapply this oil blend twice or thrice during the day. It can also be applied before going to bed and left on overnight.
+
+    </div>
+   <div class="col-md-6" style="   border-left: 2px solid white"> 
+
+    <h3>Why This Works</h3><br>
+Carrier oils, such as olive oil, coconut oil, and castor oil, are the best natural moisturizers and lubricants. They contain healthy fatty acids that provide the lips with the oils they need and make them soft and supple . Adding essential oils, such as tea tree oil or grapeseed oil, will speed up the healing process of dry lips. They also prevent infections, especially if the dryness has led to cracks in your lips
+    </div>
+</div>
+
+<h3>Honey and Vaseline</h3>
+<center><img src="http://cdn2.stylecraze.com/wp-content/uploads/2013/05/2.-Honey-And-Vaseline.jpg"></center>
+<div class="row">
+   <div class="col-md-6"> 
+    <h3>What You Have To Do</h3>
+1.Apply a layer of honey on your lips.<br>
+2.Apply a layer of Vaseline on top of this.<br>
+3.Leave these on for 10-15 minutes.<br>
+4.Use a damp tissue or a damp cloth to wipe it off<br>
+5.Apply this blend on your lips and leave it on.<br>
+<hr>How Often You Should Do This</h3><br>
+Repeat this once every day for about a week for lasting results.
+
+    </div>
+   <div class="col-md-6" style="   border-left: 2px solid white"> 
+
+    <h3>Why This Works</h3><br>
+Honey has amazing antibacterial properties and is one of nature’s best healing agents. It is also a humectant . Vaseline or petroleum jelly is widely used to soften and nourish the skin and prevent it from drying. It seals in the moisture in the skin . By combining these two ingredients, we get a very effective home remedy for chapped lips
+    </div>
+</div>
+
+<h3> Cocoa Butter For Chapped Lips</h3>
+<center><img src="http://cdn2.stylecraze.com/wp-content/uploads/2013/05/7.-Cocoa-Butter-For-Chapped-Lips.jpg"></center>
+<div class="row">
+   <div class="col-md-6"> 
+    <h3>What You Have To Do</h3>
+Apply a small amount of cocoa butter on your lips and leave it on overnight.<br>
+Alternatively, you can also use shea butter or ghee (clarified butter) and leave it on overnight as well.<br>
+If you plan to use peanut butter, yogurt or buttermilk, just leave it on your lips for 5-10 minutes and then rinse it off. (Leaving these on overnight will ruin your pillow covers.).<br>
+<hr>How Often You Should Do This</h3><br>
+Do this every day for a few days.
+
+    </div>
+   <div class="col-md-6" style="   border-left: 2px solid white"> 
+<br>
+    <h3>Why This Works</h3><br><br>
+When it comes to cocoa butter, shea butter, and ghee, these different types of butter extracted from different sources mainly contain essential fatty acids that deeply condition and nourish dehydrated skin. Ingredients like yogurt and buttermilk also contain skin nourishing fats. At the same time, they act as mild astringents
+    </div>
+</div>
+`;
+    
+var sleep=`<p>Insomnia is a common sleep disorder that is characterized by staying asleep or difficulty in falling asleep. This results in fatigue, poor performance, tension headaches, irritability, depression and various other problems. If you have been awake until 2 AM, then you are suffering with insomnia. It is one of the least-understood sleep disorders. Adults need an average of 8-9 hours of sleep daily at night, otherwise one might feel miserable and will end up tossing and turning in bed.<br>
+Let's have a look at the top 11 Indian home remedies for insomnia.</p><br><br>
+
+<h3>1.Take A Hot Bath</h3>
+<p>Taking a hot shower two hours before going to bed can be of great help in treating insomnia. A study found out that women with insomnia who took a hot bath for about 90 minutes slept much better than those who didn't. A hot bath relaxes your body and soothes the nerve endings.<br>Add a few drops of soothing essential oils like chamomile, rosemary or lavender oil to the bath water.</p>
+ 
+<h3>2. Apple cider Vinegar</h3>
+<p>Apple cider vinegar has amino acids that relieve fatigue. It also helps in breaking down the fatty acids that release tryptophan. This will regulate a proper sleep cycle.<br> Mix 2 teaspoons each of apple cider vinegar and honey in a glass of warm water.<br> Drink this mixture before going to sleep.</p>
+
+<h3>3.Fenugreek Water </h3>
+<p>Drinking fenugreek water every day will not only help the body to function properly but will also promote better sleep. Fenugreek is known to reduce insomnia, anxiety and dizziness. <br>Soak a teaspoon of fenugreek seeds in a bowl of water. Leave it overnight. <br>Strain this water and drink it daily.</p>
+
+`;
+    
+var ulcer=`<p>Mouth ulcers are sores or lesions that often appear on the inside of the cheeks, lips or on the floor of the mouth. They are uncomfortable, sometimes painful but harmless. Mouth ulcers can be caused due to a number of reasons like constipation, hormonal changes, acidity and deficiencies of vitamin B or C, iron and other nutrients. Interestingly, it has been found that women (more than men), adolescents, and those with a family history of mouth ulcers are at higher risk of developing mouth ulcers. The good news is that they are easily treatable.  Stock your home with these natural home remedies for mouth ulcers. </p>
+
+<div class="row">
+    <div class="col-sm-6">
+    <br><br><br>
+    <img src="https://i.ndtvimg.com/i/2016-08/honey_625x350_71470987150.jpg"  width=500px >
+    </div>
+    <div class="col-sm-6">
+       <br>
+
+<h3>Honey</h3>
+
+    <p>Honey works due to its antibacterial properties. Honey retains moisture and prevents your mouth from becoming dry.  It also hastens the process of new tissue growth. It is  suggested that you apply raw homey to the ulcer or you can even mix it with some amla powder and gently rub on the affected area.  You can even mix pinch of turmeric with honey, it helps in healing</p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-6">
+    <br><br><br>
+    <img src="https://i.ndtvimg.com/i/2016-08/camphor-for-home-remedies_625x350_61470994345.jpg"  width=500px >
+    </div>
+    <div class="col-sm-6">
+       <br>
+
+<h3>Mishri and Camphor</h3><br>
+
+    <p>Another home remedy where you can grind 8 grams mishri with 1 gram of camphor and apply this powder on the sores. This mix is known to reduce irritation and swelling</p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+<div class="row">
+    <div class="col-sm-6">
+    <br><br><br>
+    <img src="https://i.ndtvimg.com/i/2016-08/aloe-vera-juice-for-home-remedies_625x350_51470995484.jpg"  width=500px >
+    </div>
+    <div class="col-sm-6">
+       <br>
+
+<h3>Aloe Vera Juice</h3><br>
+
+    <p>Swish some aloe vera juice a couple of times in the day to get relief. This simple home remedy is the easiest way to treat mouth ulcers. Aloe vera also has natural anti-inflammatory properties and drinking aloe vera juice is known to cure even stomach ulcers. It offers relief by healing the stomach lining and reducing acidic secretions.</p>
+    </div>
+ </div>
+    <HR COLOR= white SIZE=20></HR>
+`;
+    
+var teeth= `<p>The enamel and dentin is what play the biggest role in color. Certain food and drinks will directly stain the enamel, yes, but over time the two biggest culprits are the nasty food and drink that actually break down the enamel, and weakening enamel as we age. As the enamel breaks down, it reveals the yellow dentin underneath. These remedies will focus on whitening teeth that have already lost some white enamel, but it’s also good to keep in mind that doing things to strengthen enamel is just as important so you can keep it from breaking down further. An ounce of prevention is worth a pound of cure (or whitening!)
+</p>
+<h3>1. Baking Soda and Lemon Juice Paste</h3>
+<p>Baking Soda isn’t a shocker here. Sodium bicarbonate (its official name) is mildly abrasive; gently scrubbing away surface stains to return teeth to a whiter shade. It’s also very alkaline (the opposite of acidic) so I would think if you have a very acidic mouth or eat a lot of acidic food, it could help balance out the Ph, which would be useful as acid breaks down enamel-this is strictly speculation on my part. It will also reduce the acidity of the lemon juice, which acts as a natural bleach of sorts. I use a mixture of baking soda and water on some days, and use the lemon juice on others, as I don’t want to overdo it.<br>
+
+<strong>You will need…</strong><br>
+-Several teaspoons of baking soda<br>
+-Enough lemon juice or water to form a paste<br>
+-A toothbrush<br>
+
+<strong>Directions</strong><br>
+Mix several teaspoons of baking soda with enough fresh lemon juice (or water) to make a paste. Wipe your teeth and any extra saliva off of them with a paper towel. Put a good amount of paste onto your toothbrush and apply.<br>
+
+Leave the paste on for 1 minute, then rinse, so as to avoid the acid effecting enamel. If you are using just water you can leave it on for up to 3 minutes.<br>
+<img src="http://everydayroots.com/wp-content/uploads/2013/09/bakingsodapasteforteeth.jpg">
+
+<h3>2. Strawberry, Salt and Baking Soda Scrub<?h3><br>
+<p>Strawberries are high in Vitamin C, which can help break-down plaque that is causing your teeth to look yellow. It also has an enzyme called malic acid, which may help to remove surface stains. The salt acts as an abrasive portion of the paste, physically scrubbing away stain-causing gunk, and the baking soda is an extra touch that you can choose to leave out if you’d prefer (I just like to add it to anything involving my teeth.)<br>
+
+<strong>You will need…</strong><br>
+-1-3 large strawberries<br>
+-A pinch of seat salt<br>
+-1/2 teaspoon of baking soda (optional)<br>
+
+<strong>Directions</strong><br>
+Mash the berries into a pulp, and add a pinch of sea salt and ½ teaspoon of baking soda, if you’re using it. Wipe any extra saliva off your teeth with a paper towel, and then apply a generous portion of the mixture to a toothbrush and apply. Let the mixture sit for 5 minutes, then rinse. Do this nightly.<br>
+
+<img src="http://everydayroots.com/wp-content/uploads/2013/09/strawberrytoothpaste.jpg">
+
+<h3>3. Coconut Oil Rinse</h3><br>
+<p>I know this sounds absolutely mad (I thought it was crazy too when I first read about it) but rinsing your mouth with coconut oil (called ‘oil pulling’) is a unique, old, remedy that people swear by to help whiten teeth. It doesn’t sound like the most pleasant thing in the world, but I actually don’t mind the taste, and I think it does make a difference in the color of your teeth. It won’t make a difference by “bleaching” per say, but lauric acid in coconut oil can rid your teeth of bacteria found in plaque that can make them yellow. It is also supposed to promote gum health, and help keep your breath fresh.<br>
+
+<strong>You will need…</strong><br>
+-About a tablespoon of coconut oil<br>
+
+<strong>Directions</strong><br>
+In the morning, before you brush your teeth, scoop out a tablespoon or a little less (depending on the size of your mouth) of coconut oil. You can either soften it, or just put it in your mouth (I usually do the latter, and just let it soften.) Push, swish, and “pull” the oil through and around your teeth for 10-15 minutes, then spit it out, rinse with water, and brush your teeth.<br>
+<img src="http://everydayroots.com/wp-content/uploads/2013/09/oilpullingteeth.jpg">
+
+`;
+function fun1() {
+    document.getElementById("para").innerHTML = yoga;
+     document.getElementById("heading").innerHTML = "YOGA";
+}
+function fun2() {
+    document.getElementById("para").innerHTML = exercise;
+     document.getElementById("heading").innerHTML = "EXERCISE";
+}
+function fun3() {
+    document.getElementById("para").innerHTML = eyes;
+     document.getElementById("heading").innerHTML = "RELAX EYES";
+}
+function fun4() {
+    document.getElementById("para").innerHTML = weightloss;
+     document.getElementById("heading").innerHTML = "WEIGHT LOSS";
+}
+function fun5() {
+    document.getElementById("para").innerHTML = lice;
+     document.getElementById("heading").innerHTML = "EFFECTIVE WAYS TO REMOVE LICE";
+}
+function fun6() {
+    document.getElementById("para").innerHTML = haircare;
+     document.getElementById("heading").innerHTML = "HAIR CARE";
+}
+function fun7() {
+    document.getElementById("para").innerHTML = skincare;
+     document.getElementById("heading").innerHTML = "SKIN CARE";
+}
+function fun8() {
+    document.getElementById("para").innerHTML = lips;
+     document.getElementById("heading").innerHTML = "LIP CARE";
+}
+function fun9() {
+    document.getElementById("para").innerHTML = sleep;
+     document.getElementById("heading").innerHTML = "BEAT INSOMIA";
+}
+function fun10() {
+    document.getElementById("para").innerHTML = ulcer;
+     document.getElementById("heading").innerHTML = "MOUTH ULCER";
+}
+function fun11() {
+    document.getElementById("para").innerHTML = teeth;
+     document.getElementById("heading").innerHTML = "WHITEN TEETH";
+}
+document.getElementById("para").innerHTML = home;
+ document.getElementById("heading").innerHTML = "FITNESS & BODY CARE";
+
+</script>
+      
+      
+      
+      
+    
+      
+      
+      
+    </div>
+    </div>
+  
+
+</body>    
+</html>

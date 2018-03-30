@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Aclonica|Modern+Antiqua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    
+    <link type="text/css" rel="stylesheet" href="index1.css">
+    <style>
+        
+        <h3>{ font-size: 25px;
+               font-weight: 100}
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a.active {
+    background-color: black;
+    color: white;
+    width: 250px;
+    text-align: center;
+    display: block;
+    padding: 12px;
+}
+
+</style>
+</head>
+<body>
+       <div class="container-fluid" >
+ <div class="row">
+  
+  <div class="col-lg-3">
+      <br><br>
+  <div class="vertical-menu">
+  <a href="index1.php" class="active ">Home</a>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun1()">Common Cold</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun2()" >Headache</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun3()">Acidity</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun4()">Back Pain</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun5()">Obesity/ Overweight</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun6()">Asthma</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun7()">Toothache</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun8()">Ear Infection</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun9()">Nose Bleed</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun10()">High Blood Pressure</button>
+  <button type="submit" class="btn btn-info btn-lg" style="width:250px;" onclick="fun11()">Insect Bite</button>
+ </div> 
+</div>
+  <div class="col-lg-9" style="border-spacing: 0;" >  
+ <div style=" background-color: burlywood">    <br><br> 
+<h1 id="heading" style="text-align: center"></h1>
+     <hr width=50%>
+<br><br><br>
+
+<p id="para" class="container-fluid" style="text-align: justify"></p>
+</div>
+     </div>
+<script>
+  
+var home=`
+<center><img src="health5.jpg" width=70% ></center><br><br>
+
+With the degree of health degrade,In the recent times, especially with the internet, more natural treatments have become popular. There are many advantages of home remedies and reasons why people have opted to use them. They include the following:<br>
+<br>
+Home remedies are simple to use and prepare. Making the concoctions does not require expertise; anybody can prepare and administer them effectively.
+Home remedies have fewer side effects and these are mild.
+Home remedies have no chemicals that could be harmful to the body
+Home remedies are cheap and easy to find. They can be found in one’s backyard, farm or readily in the market at cheap rates.
+Home remedies are more effective against many illnesses. One kind of home remedy can be used to treat several types of other illnesses<br><br> `;
+    
+    
+var cold=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/what-is-the-most-common-disease-1.jpg">
+<strong>Fact:</strong> On an average, an adult experience 2 – 3 episodes of cold per year whereas a child may have 6 – 10. Cold is one of the leading causes for the most number of doctor visits. Survey reports claim that cold is so common worldwide that every year it causes an estimated 123+ million lost days from school and 116+ million lost days from work. Overall, there is a $92+ billion productivity loss and the discomfort it causes can make a person miserable. So, there are valid reasons why treating common cold should be on the top of your to-do list.<br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Grind ½ teaspoon of pepper, 1 teaspoon of cumin seeds, ½ teaspoon of dried ginger, and fresh neem leaves (select tender ones) in a mixer-blender.<br>
+Step 2: Dry the ground mixture in the shade. Once dry, consume them two times a day to get rid of common cold.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Boil 6 – 7 tablespoons of ginger (freshly grated) in 3 cups of water for 10 – 15 minutes. Add a pinch of cinnamon powder if you want.<br>
+Step 2: Strain the liquid and allow it to cool down a bit. Before drinking, add a few drops of honey and lemon juice for flavor. Drink twice a day to get rid of cold.<br>
+
+`;
+    
+var headache=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/headache-is-a-common-disease.jpg">
+<strong>Fact:</strong> Headaches are one of the most common diseases of the nervous system. At some point or the other, we all suffer from a headache. Though headaches are classified into many types, the most common headache people tend to suffer is associated with stress.<br><br>
+
+Globally, about 5% of 7-year-old kids and 75% of 15-year-old teens suffer from frequent headaches. If adults are included, the percentage is higher. A headache that occasionally occurs due to stress is not dangerous but if it is recurring, it could be a sign of a migraine.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Take fresh betel leaves and grind them with a few drops of water to make a smooth paste.<br>
+Step 2: Apply the betel leaves the paste on your forehead and temples to relieve a headache.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Crush some dry cloves and tie them in a handkerchief.<br>
+Step 2: Whenever you have a headache, smell the aroma of the crushed cloves to feel better instantly.<br>
+
+`;
+
+var acidity=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/acidity-is-a-common-health-problem.jpg">
+<strong>Fact:</strong> Reports and statistics from Healthline estimate that acidity, scientifically known as GERD (Gastroesophageal reflux disease), is a problem that about 60% of the global adult population experiences at least once in a year whereas the remaining 40% suffers from it weekly. It is also shocking to know that besides adults, even children experience it. Occasional acidity is not a serious concern but frequent GERD surely is.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Chop a few pieces of ginger and boil in 2 cups of water for 10 minutes.<br>
+Step 2: Once the quantity boils down to 1 cup, filter it and drink when it is warm.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Boil a teaspoon of chamomile petals (dried) with 2 cups of water for 10 minutes.<br>
+Step 2: Strain the liquid and add a few drops of honey and lemon juice to it. Drink when it is warm.<br>
+
+`;
+    
+var backpain=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/back-pain-is-the-most-common-disease.jpg">
+<strong>Fact:</strong> Back pain or Low back pain (LBP) is one of the most common health conditions that affects an individual multiple times in his or her lifetime. As a person ages, it becomes recurrent. According to medlineplus, out of 10, an estimated 8 individuals suffer from back pain. The global cost linked with back pain treatment exceeds $25 billion every year. Back pain should never be taken lightly. Most back pains fade away within a month but if it lasts for three months or more, it is chronic and requires proper medical care.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Boil 10 to 12 fresh basil leaves in a cup of water for 10 minutes.<br>
+Step 2: Once it boils down to half the quantity, allow the mixture to warm.<br>
+Step 3: Strain and add a pinch of salt. Drink twice a day if you have mild back pain.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: A simple exercise like walking can help reduce back pain.<br>
+Step 2: Walk for 30 minutes daily in the mornings, but do it in moderation. If the pain is severe, discuss with a doctor.<br>
+`;
+    
+var obesity=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/obesity-is-a-common-problem.jpg">
+<strong>Fact:</strong> One of the most common health issues the whole world suffers is obesity or overweight. According to EASO (European Association for the Study of Obesity), the problem of obesity has doubled since the 1980s. It is the cause of most major problems like cholesterol, heart attacks, and strokes.<br>
+
+More than 1.5 billion adult populations in the world are obese and the numbers are increasing every minute. Obesity is the world’s fifth leading cause of death and an estimated 2.8+ million adults die every year. Being overweight is no fun. It is a serious problem, which requires serious attention and quick remedy.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Boil some green tea leaves in water or get a green tea bag and dip it in hot water.<br>
+Step 2: Drink a cup of green tea every day to lose weight. A study done at Penn State University claimed that a compound named epigallocatechin-3-gallate (EGCG) in natural green tea limits the absorption of fat and speeds the body’s capability to utilize fat.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Eating 5 to 7 curry leaves (fresh) every morning is a well-known Ayurvedic remedy to overcome obesity.<br>
+Step 2: Repeat the remedy for a month or two, at least on alternate days for best results. Curry leaves have a natural alkaloid named mahanimbine, which exhibits lipid-lowering and anti-obesity properties; thus, helping the body lose weight and reducing the overall triglycerides as well as cholesterol levels.<br>
+`;
+    
+var asthma=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/asthma-is-one-of-the-Most-common-diseases.jpg">
+<strong>Fact:</strong> Asthma is one of the chronic and most common diseases that occurs in the lung airways. It causes wheezing, tightness in the chest, and coughing. Aaaai.org reports that about 300 million individuals around the globe have asthma and this count is predicted to increase by a 100 million more in the year 2025. An estimated 250,000 asthma deaths occur every year. Fortunately, the condition is avoidable if the correct remedies are applied.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Take some fresh betel leaves and extract its juice. Soak a few pieces of black pepper into the prepared betel leaves juice for two days.<br>
+Step 2: Dry the mixture and powder it. Tale ½ teaspoon of it and mix it with a few drops of honey. Eat this two times a day (morning and night) after meals.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Boil 4 – 5 dry cloves in a cup of water. Strain the liquid and add a few drops of honey for flavor.<br>
+Step 2: Drink the mixture twice a week for a month for best results.<br>
+`;
+    
+var toothache=` <img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/toothache-is-a-common-disease.jpg">
+<strong>Fact:</strong> Toothaches are one of the most common dental problems people around the world experience. Though there are various causes of tooth pain, the common reasons include dental trauma, tooth decay, dental abscess, and extraction. Also, unhealthy eating habits, smoking, and drinking are the major causes for the most oral problems.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Take some fresh peppermint leaves. Wash and dry them.<br>
+Step 2: Once dry, grind them to powder form. Mix it with a little salt. Brush with it when you have pain.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Grind sugar and black pepper in equal proportions.<br>
+Step 2: Apply the mixture on the tooth pain for relief.<br>
+`;
+    
+var ear=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/ear-infection-is-a-common-illness.jpg">
+<strong>Fact:</strong> Scientifically known as Otitis media, an infection is the common cause of most earaches. Globally, 80% of kids are treated for at least one infection in the middle ear. In the United States, ear infections are one of the most common reasons for maximum pediatrician visits, accounting about 30 million trips to the hospital every year. Earaches can be very distressing and painful. They are often accompanied by fever and cold. They require immediate medical attention.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Take 1 tablespoon of pure sesame oil.<br>
+Step 2: Slightly heat the oil with 1 garlic clove (peeled) with a few cumin seeds.<br>
+Step 3: Filter the oil and allow it to cool down a bit. Use a dropper and pour a few drops into the ear.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Slightly heat 1 tablespoon of olive oil with a few fresh basil leaves (pinched).<br>
+Step 2: Filter the oil and use a dropper to pour a few drops of it into the aching ear.<br>
+`;
+    
+var nose= `<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/common-and-dangerous-diseases.jpg">
+<strong>Fact:</strong> The most common misconception about nosebleeds is that only kids are vulnerable to it. However, research has revealed that nosebleeds are prevalent in senior citizens as well, which are usually a sign of an underlying health condition. But this doesn’t mean kids experience them less. About 30% of the global children of the age 5 and below have had at least 2 – 3 episodes of spontaneous nosebleeds in a year. Recurring nosebleeds can be a serious issue; hence, they shouldn’t be left untreated.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Peel an onion and slice them into thick, big spheres.
+Step 2: Hold an onion slice under the nose instantly. Wait for 5 minutes. The bleeding will stop.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Mix 1 teaspoon of pure cayenne pepper powder with 1 cup of warm water.<br>
+Step 2: Drink the mixture to stop the bleeding nose instantly.<br>
+`;
+    
+var bp=`<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/hypertension-is-a-common-disease.jpg">
+<strong>Fact:</strong> World Health Organization reports that an estimated 7.7 million people die every year due to raised blood pressure. Hypertension or high blood pressure has been directly linked with fatal diseases like diabetes, kidney disorders and heart attacks.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: Take some fresh moringa (drumstick) leaves and extract its juice. Dry and then powder it. Alternatively, you can buy moringa powder.<br>
+Step 2: Take two grams of moringa powder and mix it with a few drops of honey. Consume this twice a day to keep the blood pressure under control.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Take a cup of homemade, fresh, plain yogurt.<br>
+Step 2: Soak 2 teaspoons of fenugreek seeds in it. Leave it overnight.<br>
+Step 3: Apply the mixture on your head the next day. Leave for 30 minutes and shampoo.<br>
+`;
+    
+var insect= `<img src="https://www.livealittlelonger.com/wp-content/uploads/2016/10/common-diseases-and-their-names.jpg">
+<strong>Fact:</strong> Insect bites and stings aren’t dangerous. They are treatable at home. Warm weather conditions make a person spend time outdoors; however, it also the time when small insects and bugs are out of their homes. Bites are 70% harmless, but poisonous ones can be dangerous. Wear proper clothing and use insect repellents to protect yourself.<br><br>
+
+<strong>Remedy 1:</strong><br>
+Step 1: An ice pack works the best for any insect bite. Wrap a few ice cubes in a clean cloth.<br>
+Step 2: Apply on the bitten part. Cold compress numbs it and lessens the inflammation.<br>
+<strong>Remedy 2:</strong><br>
+Step 1: Slice a piece of fresh papaya and apply on the swollen part.<br>
+Step 2: The enzymes in papaya will neutralize the venom and soothe the itching.<br>
+Note: For poisonous bites, meet a doctor immediately. Do not delay.
+`;
+    
+function fun1() {
+    document.getElementById("para").innerHTML = cold;
+     document.getElementById("heading").innerHTML = "COMMON COLD";
+}
+function fun2() {
+    document.getElementById("para").innerHTML = headache;
+     document.getElementById("heading").innerHTML = "HEADACHE";
+}
+function fun3() {
+    document.getElementById("para").innerHTML = acidity;
+     document.getElementById("heading").innerHTML = "ACIDITY";
+}
+function fun4() {
+    document.getElementById("para").innerHTML = backpain;
+     document.getElementById("heading").innerHTML = "BACK PAIN";
+}
+function fun5() {
+    document.getElementById("para").innerHTML = obesity;
+     document.getElementById("heading").innerHTML = "OBESITY";
+}
+function fun6() {
+    document.getElementById("para").innerHTML = asthma;
+     document.getElementById("heading").innerHTML = "ASTHMA";
+}
+function fun7() {
+    document.getElementById("para").innerHTML = toothache;
+     document.getElementById("heading").innerHTML = "TOOTHACHE";
+}
+function fun8() {
+    document.getElementById("para").innerHTML = ear;
+     document.getElementById("heading").innerHTML = "EAR INFECTION";
+}
+function fun9() {
+    document.getElementById("para").innerHTML = nose;
+     document.getElementById("heading").innerHTML = "NOSE BLEED";
+}
+function fun10() {
+    document.getElementById("para").innerHTML = bp;
+     document.getElementById("heading").innerHTML = "HYPERTENSION";
+}
+function fun11() {
+    document.getElementById("para").innerHTML = insect;
+     document.getElementById("heading").innerHTML = "INSECT BITE";
+}
+
+document.getElementById("para").innerHTML = home;
+ document.getElementById("heading").innerHTML = "HEALTH ";
+
+</script>
+      
+     
+           </div>
+    </div>
+    </body>
+</html>
